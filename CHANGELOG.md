@@ -6,3 +6,5 @@
 - Added the fix rules (rewrite rule, scoring rule, arithmetic rule): prompts/final.
 - Re-ran the tests on the fixed Gem: 11 passed, 1 failed (Test 3, inconsistent required-skill points).
 - Added test inputs and screenshots to test-data/.
+## 2026-11-21
+- Created the public GitHub repository and uploaded prompts, test inputs and screenshots.
