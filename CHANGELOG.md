@@ -1,10 +1,22 @@
-# Changelog (changes since Milestone 1)
+# Changelog
+
+Changes since Milestone 1, newest first.
+
+## 2026-11-22
+- Recorded the project reel (109 seconds) and uploaded it to YouTube as unlisted.
+- Added the Milestone 2 PDF and the Technical Report to `docs/`.
+- Updated the README with the reel link and a short summary of the results.
+- Filled in and submitted the Milestone 2 form.
+
+## 2026-11-21
+- Added three rules to the Gem (rewrite rule, scoring rule, arithmetic rule). This is prompt version v3, saved in `prompts/v3/` and `prompts/final/`.
+- Re-ran all 12 tests on v3: 11 passed, 1 failed. Test 4 (chef resume) dropped from 22 to 0 and Test 9 stopped contradicting its own score.
+- Test 3 still fails because its score changes between runs (92, 100). We kept it in the table as a known limitation.
+- Ran the Milestone 1 baseline prompt three times in a plain Gemini chat to get the v1 numbers (scores 45, 52 and 52).
+- Saved screenshots of Tests 1, 6 and 12 and of the Gem instructions in `test-data/`.
+- Created this public GitHub repository and uploaded the prompts, test inputs and screenshots.
 
 ## 2026-11-20
-- Built the shared Gemini Gem "Resume Reviewer by Pioneers" from the Milestone 1 baseline prompt (prompts/v2).
-- First round of 12 tests run: 5 passed, 7 failed (invented tools in rewrites, free preferred-skill points, score not matching its breakdown, code leaking into the reply).
-- Added the fix rules (rewrite rule, scoring rule, arithmetic rule): prompts/final.
-- Re-ran the tests on the fixed Gem: 11 passed, 1 failed (Test 3, inconsistent required-skill points).
-- Added test inputs and screenshots to test-data/.
-## 2026-11-21
-- Created the public GitHub repository and uploaded prompts, test inputs and screenshots.
+- Built the shared Gemini Gem "Resume Reviewer by Pioneers" from the Milestone 1 baseline prompt (saved as `prompts/v2/`).
+- Ran the first round of 12 tests on v2: 5 passed, 7 failed. The problems were invented tools in rewrites, free preferred-skill points, a score that did not match its own breakdown, and code showing up in the reply.
+- Checked that the Gem link opens from a different Google account.
